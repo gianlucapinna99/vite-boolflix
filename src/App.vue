@@ -22,18 +22,29 @@ export default {
   },
   methods: {
     searchMovie() {
-      axios.get(store.config.url_movies,
-        {
+      Promise.all([
+        axios.get(store.config.url_movies, {
+          params: {
+            api_key: store.config.api_key,
+            query: store.search
+          }
+        }),
+        axios.get(store.config.url_tv, {
           params: {
             api_key: store.config.api_key,
             query: store.search
           }
         })
-        .then((response) => {
-          this.store.movies = response.data.results
+      ])
+        .then(([movieResponse, tvResponse]) => {
+          this.store.movies = movieResponse.data.results;
+          this.store.tv = tvResponse.data.results;
         })
-    }
-  }, //Take data for movies
+        .catch((error) => {
+          console.error(error);
+        });
+    }, //Take data for tv series
+  },
 }
 </script>
 
