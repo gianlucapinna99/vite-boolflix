@@ -31,3 +31,4 @@ Allarghiamo poi la ricerca anche alle serie tv. Con la stessa azione di ricerca 
 
 -Creo una una computed property che prenda gli elementi dei due diversi array, li unisca in un altro array a cui posso riferirmi per stampare i risultati della ricerca con sia film che serie tv.
 
+-Installo pacchetto bandiere ed associo ad ogni lingua una sua bandiera
