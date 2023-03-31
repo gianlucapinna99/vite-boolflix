@@ -32,3 +32,8 @@ Allarghiamo poi la ricerca anche alle serie tv. Con la stessa azione di ricerca 
 -Creo una una computed property che prenda gli elementi dei due diversi array, li unisca in un altro array a cui posso riferirmi per stampare i risultati della ricerca con sia film che serie tv.
 
 -Installo pacchetto bandiere ed associo ad ogni lingua una sua bandiera
+
+# MILESTONE 3
+
+In questa milestone come prima cosa aggiungiamo la copertina del film o della serie al nostro elenco. 
+Trasformiamo poi il voto da 1 a 10 decimale in un numero intero da 1 a 5, così da permetterci di stampare a schermo un numero di stelle piene che vanno da 1 a 5, lasciando le restanti vuote.
