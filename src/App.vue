@@ -43,7 +43,7 @@ export default {
         .catch((error) => {
           console.error(error);
         });
-    }, //Take data for tv series
+    },  //Take data for tv series
   },
 }
 </script>
