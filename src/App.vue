@@ -8,12 +8,14 @@ import { store } from './store';
 
 //Components
 import AppMain from './components/AppMain.vue';
+import AppHeader from "./components/AppHeader.vue";
 
 
 export default {
   name: 'App',
   components: {
-    AppMain
+    AppMain,
+    AppHeader
   },
   data() {
     return {
@@ -49,8 +51,13 @@ export default {
 </script>
 
 <template>
+  <AppHeader @submit="this.searchMovie()"></AppHeader>
   <AppMain @submit="this.searchMovie()"></AppMain>
 </template>
 
 
-<style lang="scss"></style>
+<style lang="scss">
+body {
+  background-color: black;
+}
+</style>
