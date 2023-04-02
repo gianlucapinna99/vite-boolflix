@@ -35,5 +35,6 @@ Allarghiamo poi la ricerca anche alle serie tv. Con la stessa azione di ricerca 
 
 # MILESTONE 3
 
-In questa milestone come prima cosa aggiungiamo la copertina del film o della serie al nostro elenco. 
+In questa milestone come prima cosa aggiungiamo la copertina del film o della serie al nostro elenco.
+
 Trasformiamo poi il voto da 1 a 10 decimale in un numero intero da 1 a 5, così da permetterci di stampare a schermo un numero di stelle piene che vanno da 1 a 5, lasciando le restanti vuote.
